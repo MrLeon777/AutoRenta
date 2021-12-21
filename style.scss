@@ -47,9 +47,18 @@
 
 .right {
   .gallery {
-    display: -webkit-box;
-    // justify-content: space-between;
-    // flex-direction: column;
+    padding-right: 103px !important;
+    .sp-image-container {
+      border-radius: 5px; 
+    }
+    .sp-thumbnails-container {
+      height: 265px !important;
+      .sp-thumbnail-container {
+        margin-top: 6px !important;
+        margin-bottom: 6px !important;
+        border-radius: 5px; 
+      }
+    }
   }
   .specifications {
     margin-top: 15px;

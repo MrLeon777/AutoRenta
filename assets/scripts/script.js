@@ -1,19 +1,28 @@
-const swiper = new Swiper(".mySwiper", {
-  direction: 'vertical',
-  // spaceBetween: 0.5,
-  slidesPerView: 4,
-  freeMode: false,
-  watchSlidesProgress: true,
+$( document ).ready(function( $ ) {
+  $( '.gallery' ).sliderPro({
+    slideDistance: 10, // расстояние между слайдами
+    width: 424,
+    height: 265,
+    orientation: 'vertical',
+    loop: false,
+    arrows: true,
+    buttons: false,
+    thumbnailsPosition: 'right',
+    // thumbnailPointer: true,
+    aspectRatio: -1,
+    thumbnailWidth: 91,
+    thumbnailHeight: 57,
+    // breakpoints: {
+    //   800: {
+    //     thumbnailsPosition: 'bottom',
+    //     thumbnailWidth: 270,
+    //     thumbnailHeight: 100
+    //   },
+    //   500: {
+    //     thumbnailsPosition: 'bottom',
+    //     thumbnailWidth: 120,
+    //     thumbnailHeight: 50
+    //   }
+    // }
+  });
 });
-const swiper2 = new Swiper(".mySwiper2", {
-  spaceBetween: 5,
-  direction: 'vertical',
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
-  thumbs: {
-    swiper: swiper,
-  },
-});
-

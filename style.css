@@ -29,7 +29,21 @@
 }
 
 .right .gallery {
-  display: -webkit-box;
+  padding-right: 103px !important;
+}
+
+.right .gallery .sp-image-container {
+  border-radius: 5px;
+}
+
+.right .gallery .sp-thumbnails-container {
+  height: 265px !important;
+}
+
+.right .gallery .sp-thumbnails-container .sp-thumbnail-container {
+  margin-top: 6px !important;
+  margin-bottom: 6px !important;
+  border-radius: 5px;
 }
 
 .right .specifications {
